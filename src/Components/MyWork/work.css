@@ -1,0 +1,246 @@
+/* Work Section */
+.work {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 100px;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+/* Work Title */
+.work-title {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-top: 100px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: transform 0.3s ease;
+  padding-bottom: 10px; /* Adds space for line */
+}
+
+.work-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the line */
+  width: 50px; /* Width of the line */
+  height: 4px; /* Thickness of the line */
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%); /* Gradient */
+  border-radius: 2px; /* Optional: Rounded corners for the line */
+}
+a{
+  align-self:flex-end;
+}
+.profile2{
+  height:300px;
+}
+.work-title:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the line */
+  width: 200px; /* Width of the line */
+  height: 4px; /* Thickness of the line */
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%); /* Gradient */
+  border-radius: 2px;
+  transition: width 1s ease-in-out; /* Increased transition time for width */
+}
+
+
+
+/* Work Title Image */
+.work-title img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 30px;
+  left: 53%;
+  transform: translateX(-50%);
+}
+
+/* Individual Project Box */
+.project {
+  height: 500px;
+  width: 300px; /* Set a uniform width for all projects */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items at the top */
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px; /* Optional: Rounded corners */
+  padding: 0px;
+  background-color: #222; /* Background color for projects */
+  margin-bottom: 40px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(19, 114, 209, 0.3);
+  /* Prevents overflow from the content */
+}
+
+/* Global Hover effect on the project container: white box shadow */
+.project:hover {
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Project Images */
+.project img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Rounded corners for images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Hover effect on images */
+.project img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+/* Content Text */
+.content {
+  width: 300px; /* Make content width same as image */
+  height: 300px; /* Make content height same as image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: #333; /* Optional: Background color for content */
+  border-radius: 8px; /* Optional: Rounded corners for content */
+  flex-grow: 1;
+  margin-top: 10px; /* Add space between image and text */
+  box-sizing: border-box;
+  line-height:1.3; /* Include padding in the box model */
+}
+
+/* Icons */
+.icon {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon a {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  .work-title {
+    font-size: 40px;
+  }
+  
+  .work-title img {
+    height: 80px;
+    width: 80px;
+    top: 20px;
+  }
+  
+  .project {
+    width: 250px;
+  }
+  
+  .project img {
+    height: 250px;
+    width: 250px;
+  }
+  
+  .content {
+    font-size: 16px;
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column; /* Stack title and images vertically */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .work-title {
+    font-size: 30px;
+  }
+  
+  .work-title img {
+    height: 70px;
+    width: 70px;
+  }
+  
+  .project {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .project img {
+    height: 220px;
+    width: 220px;
+  }
+  
+  .content {
+    font-size: 14px;
+    height: 220px;
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-title {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .work-title img {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .project {
+    width: 300px;
+    margin-bottom: 15px;
+  }
+  
+  .project img {
+    height: 150px;
+    width: 250px;
+  }
+  
+  .content {
+    font-size: 15px;
+    height: 150px;
+    width: 250px;
+    padding: 5px;
+  }
+}

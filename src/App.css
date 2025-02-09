@@ -1,0 +1,14 @@
+/* Add a background animation */
+.app {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+   
+  }
+  
