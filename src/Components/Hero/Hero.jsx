@@ -26,7 +26,7 @@ const Hero = () => {
           </a>
           
           </div>
-        <div className="hero-resume" ><a href="https://drive.google.com/file/d/1SAiPgNZzW8HZJpRG6oMmpf5rkpHj8uom/view?usp=sharing">My resume</a></div>
+        <div className="hero-resume" ><a href="/resume.pdf" download="Nitheesh_Resume.pdf">Resume</a></div>
        </motion.div>
     </motion.div>
   )

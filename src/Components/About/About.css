@@ -52,7 +52,7 @@ body {
 
 /* About Me Section */
 .aboutme {
-  width: 50%;
+  width: 80%;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 1.5rem;
@@ -61,7 +61,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: left;
-  margin-top: 2rem;
+  margin-top:10px;
   position: relative;
   border: 2px solid white;
   line-height:1.5;
@@ -97,10 +97,10 @@ body {
 
 /* Skills Section */
 .skills {
-  width: 60%;
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 15px;
+  gap: 10px;
   justify-content: space-around;
   align-items: center;
   margin-top: -20px;
@@ -157,7 +157,7 @@ body {
   text-align: center;
   color: white;
   position: relative;
-  
+  margin-top:-40px;
   padding-bottom: 10px; /* Adds space for line */
 }
 
@@ -305,6 +305,7 @@ top:70px;
 
   .about-title {
     font-size: 1.8rem;
+    margin-top:2px;
   }
 
   .skills {
@@ -328,7 +329,7 @@ top:70px;
 .about-title::after {
   content: '';
   position: absolute;
-top:40px;
+  top:40px;
   bottom:0;
   left: 50%;
   transform: translateX(-50%); /* Centers the line */

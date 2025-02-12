@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-top">
             <div className="footer-top-left">
               <h1>Nitheesh</h1>
-                <p>Im a front end developer from Bangaluru</p>
+                <p>I'm a Full Stack Developer</p>
             </div>
             <div className="footer-top-right">
                 <div className="footer-email-input">
